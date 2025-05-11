@@ -1,0 +1,33 @@
+body{
+    background-color: #acc2ef;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+  background-color: #4F5E81;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+.text1{
+  font-size: large;
+  color: rgb(255, 255, 255);
+   text-align: center;
+    font-size: 200px;
+}
+.p{
+   
+    text-align: right;
+}
+.b{
+    width: 2200px;
+}
