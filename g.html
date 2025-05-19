@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="g.css">
-    <br>
-    <br>
-    <h1 class="text1">moje projekty</h1>
-</head>
-<header>
-    <nav>
-      <a href="index.html">domů</a>
-    </nav>
-  </header>
-<body>
-    <div class="p">
-    <img src="mesi.jpg" width="400px">
-    <img src="doom 4.jpg" width="400px">
-    </div>
-    <div class="b">
-<img src="WEB_CROSS.jpg" alt="">
+  <meta charset="UTF-8">
+  <title>Obdélník na středu</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  /* vodorovné vycentrování */
+      align-items: center;      /* svislé vycentrování */
+      background-color: #ffffff;
+    }
 
-    </div>
+    .obdelnik {
+      background-color: black;
+      width: 600px;          
+      height: 600px;         
+      border: 50px solid black; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;  
+    }
+
+    .obdelnik img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="obdelnik">
+    <img src="doom 4.jpg" alt="Ukázkový obrázek">
+  </div>
+
 </body>
 </html>
