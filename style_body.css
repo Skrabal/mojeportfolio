@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding-top: 60px; 
-  font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #ffffff, #233554,#49628B,#426696);
   margin: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
 }
 
 header {
@@ -28,7 +28,10 @@ nav a {
  color: aquamarine;
  text-align: center;
  font-size: 200px;
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
+
 .text1{
   font-size: large;
   color: aqua;
@@ -49,10 +52,11 @@ nav a {
   color: wheat;
 }
 .text2{
+ 
   color: rgb(255, 255, 255);
   text-align: left;
   width: 500px;
-  margin-left: 600px;
+  margin-left: 800px;
   margin-top: -520px;
   font-size: 30px;
 }
@@ -69,20 +73,32 @@ nav a {
 }
 
 body.scrolled nav a {
-  color: white; /* Změna barvy, když opustíš bílou část */
+  border-radius: 15px;
+  background-color:#4d648d;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3px;
+  text-align: center;
+  
 }
 .head{
   text-align: center;
 }
 .nadpis{
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   color: #4F5E81;
   text-align: center;
  font-size: 200px;
 }
 .nadpis2{
-  color: red;
+  color: rgb(255, 255, 255);
   text-align: center;
-font-size: 150px;
+font-size: 50px;
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 .odkaz{
   color: #49628B;
@@ -92,4 +108,54 @@ font-size: 150px;
 .icons{
   font-family: Arial;
 }
+ .tla a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
 
+    .tla a:hover {
+      background-color: #0056b3;
+      text-align: center;
+    }
+
+
+
+    .top-center {
+      display: flex;
+      justify-content: center;
+      top: 0;
+      width: 100%;
+     
+    }
+
+    .top-center a {
+      text-decoration: none;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .top-center a:hover {
+      background-color: #0056b3;
+    }
+
+  .nadpis {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:  transform 2s ease;
+  }
+
+  .nadpis.zobrazit {
+    opacity: 1;
+    transform: translateY(0);
+  }

@@ -10,11 +10,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">   
+<title>Portfolio</title>
 </head>
-<body>
-    <title>David Škrabal</title>
-    
+<body> 
   <header>
     <nav>
       <a href="#o-mne">O mně</a>
@@ -56,15 +60,12 @@
     <h1 class="nadpis1">Projekty</h1>
     <br>
     <br>
+    <h2>github</h2>
+
+<button class="button"><img src="github.png" width="80px" padding="1px"><a href="https://github.com/Skrabal/mojeportfolio"><span>odkaz </span></a></button>
     <div class="projekty">
-    <h1 >tady jsou moje github projekty </h1 >
-      <div class="git">
-        <a href="https://github.com/Skrabal/mojeportfolio" >
-      </div>
-      <div class="odkaz">
-      <img src="" >
-      </div>
-      </a>
+  
+     
     <h3>HTML: používám k vytváření jednoduchých i složitějších webových stránek. <br>
 
         Moje webové projekty: <br>
@@ -90,47 +91,90 @@
        <br>
        <h2 class="nadpis2">grafické projekty</h2>
        <!DOCTYPE html>
-<html lang="cs">
-<head class="odkaz">
-    <meta charset="UTF-8" >
-    <title>Přesměrovací tlačítko</title>
-</head>
-<body>
 
-    <button onclick="window.location.href='g.html';">
-        Přejít na jinou stránku
-    </button>
+   <div class="top-center">
+     <a href="g.html">grafické album</a>
+  </div>
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #acacac;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-</body>
-</html>
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+
     <h1 id="kontakt" class="white"></h1>
 
     <h1 class="nadpis1">kontakty</h1>
     <div class="icons">
-    <i class="fa fa-phone" style="font-size:48px;color:rgb(0, 0, 0)" > +420 739 707 019</i>
+   <i class="fa fa-phone" style="font-size:48px; color:rgb(0, 0, 0);"></i>
+<a  style="font-size:48px; margin-left:10px; text-decoration:none; color:black;">
+  +420 739 707 019
+</a>
     <br>
     <br>
-    <i class="fa fa-envelope" style="font-size:48px"> skrabaldavid@gmail.com</i>
+   <i class="fa fa-envelope" style="font-size:48px"></i>
+<span style="font-size:48px; margin-left:10px;">skrabaldavid@gmail.com</span>
     </div>
     <div class="obrazky">
         <br>
         <img src="github.png" alt="Obrázek 1">
         <img src="facebook.png" alt="Obrázek 2">
         <img src="instagram-new.png" alt="Obrázek 3">
-      </div>
+    </div>
 </div>
  
 </div>
         <script>
-  window.addEventListener("scroll", function () {
-    const triggerPoint = 300; // výška, kdy končí bílá část
-    if (window.scrollY > triggerPoint) {
-      document.body.classList.add("scrolled");
-    } else {
-      document.body.classList.remove("scrolled");
-    }
+window.addEventListener("scroll", function () {
+  const triggerPoint = 300;
+  if (window.scrollY > triggerPoint) {
+    document.body.classList.add("scrolled");
+  } else {
+    document.body.classList.remove("scrolled");
+  }
+});;
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const nadpis = document.querySelector(".nadpis");
+    setTimeout(() => {
+      nadpis.classList.add("zobrazit");
+    }, 300); // malé zpoždění pro efekt
   });
 </script>
-
 </body>
 </html>

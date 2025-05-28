@@ -1,7 +1,34 @@
-body{
-    background-color: #acc2ef;
-}
- .obdelnik  {
-      width: 50%;           
+body {
+       background: linear-gradient(to bottom, #ffffff, #233554,#49628B,#426696);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .image-container {
+      background-color: black; 
+      padding: 10px;
+      margin: 20px auto;
+      width: fit-content;
+    }
+
+    .image-container img {
+      display: block;
+      
       
     }
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
