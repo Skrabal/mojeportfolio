@@ -158,6 +158,9 @@ font-size: 50px;
     transform: translateY(20px);
     transition:  transform 2s ease;
   }
+  .picture{
+    width: 500px;
+  }
 
   .nadpis.zobrazit {
     opacity: 1;
