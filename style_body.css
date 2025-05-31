@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding-top: 60px; 
-  background: linear-gradient(to bottom, #ffffff, #233554,#49628B,#426696);
+  background: linear-gradient(to bottom, #ffffff, #ffffff, #233554,#49628B,#426696);
   margin: 30px;
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -25,7 +25,14 @@ nav a {
   font-size: 18px;
 }
 .nadpis1{
- color: aquamarine;
+ color: #4d648d;
+ text-align: center;
+ font-size: 200px;
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+.nadpis3{
+ color: rgb(255, 255, 255);
  text-align: center;
  font-size: 200px;
  font-family: "Inter", sans-serif;
@@ -111,7 +118,7 @@ font-size: 50px;
  .tla a {
       display: inline-block;
       padding: 12px 24px;
-      background-color: #007BFF;
+      background-color: #236bb8;
       color: white;
       text-decoration: none;
       font-size: 18px;
@@ -125,9 +132,9 @@ font-size: 50px;
       background-color: #0056b3;
       text-align: center;
     }
-
-
-
+    .git{
+      color: #ffffff;
+    }
     .top-center {
       display: flex;
       justify-content: center;
@@ -145,10 +152,7 @@ font-size: 50px;
       transition: background-color 0.3s;
     }
 
-    .top-center a:hover {
-      background-color: #0056b3;
-    }
-
+ 
   .nadpis {
     opacity: 0;
     transform: translateY(20px);
@@ -159,3 +163,95 @@ font-size: 50px;
     opacity: 1;
     transform: translateY(0);
   }
+/* Základní styly zůstávají beze změny */
+
+/* === Media Queries === */
+
+/* Mobilní zařízení a malé obrazovky do 600px */
+@media (max-width: 600px) {
+  .obrazky {
+    flex-direction: column;       /* obrázky pod sebou */
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .obrazky img {
+    width: 90%;                
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .text2 {
+    width: 90%;                 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  nav a {
+    font-size: 24px;
+    margin: 10px 5px;
+  }
+  
+  .nadpis1, .nadpis {
+    font-size: 50px;
+  }
+}
+
+/* Tablety a střední obrazovky do 900px */
+@media (max-width: 900px) {
+  .obrazky {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .obrazky img {
+    width: 45%;
+    max-width: 350px;
+  }
+  
+  .text2 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  nav a {
+    font-size: 36px;
+  }
+  
+  .nadpis1, .nadpis {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .obrazky img {
+    width: 30%;
+    max-width: 400px;
+  }
+  
+  .text2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 26px;
+    text-align: left;
+  }
+  
+  nav a {
+    font-size: 42px;
+  }
+  
+  .nadpis1, .nadpis {
+    font-size: 160px;
+  }
+}

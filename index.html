@@ -44,8 +44,7 @@
 <br>
 <br>
 <h1 id="o-mne" class="white"></h1>
-<h1 class="nadpis1"> o mně</h1>
-
+<h1 class="nadpis1" > o mně</h1>
 <h2 class="text1">
     <img class="picture" src="me.jpg" alt="">
 <div class="text2" >
@@ -57,12 +56,12 @@
     <br><br>
     <br>
     <h1 id="projekty" class="white"></h1>
-    <h1 class="nadpis1">Projekty</h1>
+    <h1 class="nadpis3" >Projekty</h1>
     <br>
     <br>
-    <h2>github</h2>
+    <h2 class="git">github</h2>
 
-<button class="button"><img src="github.png" width="80px" padding="1px"><a href="https://github.com/Skrabal/mojeportfolio"><span>odkaz </span></a></button>
+<button class="button"><img src="github.png" width="80px" padding="1px"><a href="https://github.com/Skrabal/mojeportfolio"  target="_blank"><span>odkaz </span></a></button>
     <div class="projekty">
   
      
@@ -93,7 +92,7 @@
        <!DOCTYPE html>
 
    <div class="top-center">
-     <a href="g.html">grafické album</a>
+     <a href="test.html">grafické album</a>
   </div>
 <style>
 .button {
@@ -139,7 +138,7 @@
 
     <h1 id="kontakt" class="white"></h1>
 
-    <h1 class="nadpis1">kontakty</h1>
+    <h1 class="nadpis3">kontakty</h1>
     <div class="icons">
    <i class="fa fa-phone" style="font-size:48px; color:rgb(0, 0, 0);"></i>
 <a  style="font-size:48px; margin-left:10px; text-decoration:none; color:black;">
@@ -161,13 +160,13 @@
 </div>
         <script>
 window.addEventListener("scroll", function () {
-  const triggerPoint = 300;
+  const triggerPoint = 1200; // změněno z 700 na 1200
   if (window.scrollY > triggerPoint) {
     document.body.classList.add("scrolled");
   } else {
     document.body.classList.remove("scrolled");
   }
-});;
+});
 
   window.addEventListener("DOMContentLoaded", function () {
     const nadpis = document.querySelector(".nadpis");
