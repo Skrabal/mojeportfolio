@@ -1,6 +1,6 @@
 body, html{
   height: 100%;
-   background: linear-gradient(to bottom, #ffffff, #233554,#49628B,#426696);
+   background: linear-gradient(to bottom, #ffffff,#ffffff, #233554,#49628B,#426696);
 }
 
 body{
@@ -64,12 +64,12 @@ body.scrolled header {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
 .card{
-   width: 180vmin;
+   width: 140vmin;
   height: 55vmin;
   display: flex;
   box-shadow: 0 30px 40px -15px rgba(255, 255, 255, 0.35);
@@ -201,4 +201,70 @@ body.scrolled header {
 }
 .pho1{
   width: 100vmin;
+}
+/* Pro zařízení s šířkou obrazovky 768px nebo menší (např. tablety a mobily) */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 90vmin;
+    height: auto;
+  }
+
+  .card__img {
+    width: 100%;
+    height: 40vmin;
+  }
+
+  .card__content {
+    width: 100%;
+    padding: 5vmin 4vmin;
+  }
+
+  .card__content-header {
+    font-size: 6vmin;
+  }
+
+  .card__content-paragraph {
+    font-size: 2vmin;
+  }
+
+  .card__content-theme {
+    font-size: 2vmin;
+  }
+
+  .card__content-link {
+    font-size: 2.2vmin;
+  }
+
+  .prevnext {
+    right: 1%;
+    width: 6vmin;
+    height: 6vmin;
+  }
+
+  #prev:after,
+  #next:after {
+    font-size: 2.5rem;
+  }
+
+  .pho1 {
+    width: 90vmin;
+  }
+}
+
+/* Pro velmi malé obrazovky (mobilní telefony do 480px) */
+@media (max-width: 480px) {
+  .card__content-header {
+    font-size: 5vmin;
+  }
+
+  .card__content-paragraph,
+  .card__content-theme,
+  .card__content-link {
+    font-size: 2.5vmin;
+  }
+
+  .nav a.logo {
+    font-size: 1.2rem;
+  }
 }
