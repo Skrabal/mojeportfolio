@@ -20,34 +20,17 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-
-/* Stylování záhlaví */
-header {
-  background-color: #233554;
-  padding: 20px 0;
-  position: sticky;
+.logo{
+  color: #BA3428;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px 0;
   z-index: 1000;
-}
-
-nav {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav a.logo {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-nav a.logo:hover {
-  color: #000000;
-  transition: color 0.3s ease;
+  font-size: 50px;
 }
 
 /* Efekt při scrollování */
@@ -56,7 +39,19 @@ body.scrolled header {
   padding: 10px 0;
   transition: all 0.3s ease;
 }
-
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+.nadpis1{
+ color: #4d648d;
+ text-align: center;
+ font-size: 200px;
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
 
 .slide{ 
   display: flex;

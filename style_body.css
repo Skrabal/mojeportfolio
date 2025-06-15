@@ -78,6 +78,9 @@ nav a {
   font-size: 50px;
   transition: color 0.3s ease;
 }
+.teyt22{
+  margin: 30px;
+}
 
 body.scrolled nav a {
   border-radius: 15px;

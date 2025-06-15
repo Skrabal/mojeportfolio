@@ -65,7 +65,7 @@
     <div class="projekty">
   
      
-    <h3>HTML: používám k vytváření jednoduchých i složitějších webových stránek. <br>
+    <h3 class="teyt22">HTML: používám k vytváření jednoduchých i složitějších webových stránek. <br>
 
         Moje webové projekty: <br>
        
@@ -104,7 +104,7 @@
     }
 
     .polozka img {
-      width: 400px;
+      width: 600px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -176,29 +176,111 @@
 
 </style>
 
+<br>
+<br>
 
-    <h1 id="kontakt" class="white"></h1>
+</div>
+<footer id="kontakt">
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/people/David-%C5%A0kraba/pfbid0347zYTJMY7XjkCfeYcsBUoH6VqXHr8wsgn5PmzVnHXKCHgDqaJLkTUGjqcUm4QLLil/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/davidskraball/?igsh=c210eWtnbHd1ZW5t&utm_source=qr#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Skrabal"><i class="fa-brands fa-github"></i></a>
+            
+           
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+               
+<br>
+                <li> <i class="fa fa-envelope" style="font-size:48px"></i>
+<span style="font-size:48px; margin-left:10px; color: #4d648d;">skrabaldavid@gmail.com</span></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </div>
+<style>
+  body{
+    margin: 1px;
+    margin-top: -30px;
+  }
+  footer{
+    background-color: #ffffff;
+    height: 0em;
+    
+    
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    
+}
+.socialIcons a i{
+    font-size: 6em;
+    color: #4d648d;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #4d648d;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
 
-    <h1 class="nadpis3">kontakty</h1>
-    <div class="icons">
-   <i class="fa fa-phone" style="font-size:48px; color:rgb(0, 0, 0);"></i>
-<a  style="font-size:48px; margin-left:10px; text-decoration:none; color:black;">
-  +420 739 707 019
-</a>
-    <br>
-    <br>
-   <i class="fa fa-envelope" style="font-size:48px"></i>
-<span style="font-size:48px; margin-left:10px;">skrabaldavid@gmail.com</span>
+}
+.footerBottom p{
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+</style>
+        
     </div>
-    <div class="obrazky">
-        <br>
-        <img src="github.png" alt="Obrázek 1">
-        <img src="facebook.png" alt="Obrázek 2">
-        <img src="instagram-new.png" alt="Obrázek 3">
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Noman</span></p>
     </div>
-</div>
- 
-</div>
+</footer>
         <script>
 window.addEventListener("scroll", function () {
   const triggerPoint = 1200; // změněno z 700 na 1200
